@@ -59,19 +59,7 @@ class ReplayerTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function it_calls_before_replay_method_on_replay_aware_event_visitor()
-    {
-        $this->eventVisitor
-            ->beforeReplay()
-            ->shouldBeCalled();
-
-        $this->replayer->replay(new Criteria());
-    }
-
-    /**
-     * @test
-     */
-    public function it_calls_after_replay_method_on_replay_aware_event_visitor()
+    public function it_calls_before_and_after_replay_methods_on_replay_aware_event_visitor()
     {
         $this->eventVisitor
             ->beforeReplay()

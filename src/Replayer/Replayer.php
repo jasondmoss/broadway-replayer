@@ -31,7 +31,7 @@ class Replayer
         $this->eventStore->visitEvents($criteria, $this->eventVisitor);
 
         if ($this->isReplayAware) {
-            $this->eventVisitor->beforeReplay();
+            $this->eventVisitor->afterReplay();
         }
     }
 }
