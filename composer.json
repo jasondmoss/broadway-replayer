@@ -1,0 +1,34 @@
+{
+  "name": "othillo/skeleton-project",
+  "description": "basic scaffolding for a PHP project",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "broadway/broadway": "^0.9@dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.5",
+    "fabpot/php-cs-fixer": "^1.10"
+  },
+  "authors": [
+    {
+      "name": "othillo",
+      "email": "othillo@othillo.nl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "othillo\\BroadwayReplayer\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "othillo\\BroadwayReplayer\\": "test/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.x-dev"
+    }
+  }
+}
