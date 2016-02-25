@@ -1,6 +1,6 @@
 {
-  "name": "othillo/skeleton-project",
-  "description": "basic scaffolding for a PHP project",
+  "name": "othillo/broadway-replayer",
+  "description": "Yet another event replayer for broadway/broadway",
   "type": "project",
   "license": "MIT",
   "require": {
